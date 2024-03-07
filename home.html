@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+      <div class="sup">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/Imagenes/Elementos/Logo.png" class="logo"></a>
+           
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="filter d-flex justify-content-center"> <!-- Agrega la clase "d-flex justify-content-center" para centrar los dropdowns -->
+        <div class="dropdown">
+          <button id="cardtypeDropdown" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Card Type 
+        </button>
+        <ul class="dropdown-menu">
+           <li><a class="dropdown-item attribute-filter" data-type="monster" href="#">Monster</a></li>
+           <li><a class="dropdown-item attribute-filter" data-type="spell" href="#">Spell</a></li>
+           <li><a class="dropdown-item attribute-filter" data-type="trap" href="#">Trap</a></li>
+        </ul>
+        </div>
+        <div class="dropdown">
+          <button id="attributeDropdown" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Attribute
+        </button>
+        <ul class="dropdown-menu">
+           <li><a class="dropdown-item attribute-filter" data-attribute="DIVINE" href="#">Divine</a></li>
+           <li><a class="dropdown-item attribute-filter" data-attribute="DARK" href="#">Dark</a></li>
+           <li><a class="dropdown-item attribute-filter" data-attribute="LIGHT" href="#">Light</a></li>
+           <li><a class="dropdown-item attribute-filter" data-attribute="FIRE" href="#">Fire</a></li>
+           <li><a class="dropdown-item attribute-filter" data-attribute="WATER" href="#">Water</a></li>
+           <li><a class="dropdown-item attribute-filter" data-attribute="WIND" href="#">Wind</a></li>
+           <li><a class="dropdown-item attribute-filter" data-attribute="EARTH" href="#">Earth</a></li>
+        </ul>
+        </div>
+        <div class="dropdown">
+          <button id="levelDropdown"  class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Level
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item level-filter" data-level="1" href="#">1</a></li>
+            <li><a class="dropdown-item level-filter" data-level="2" href="#">2</a></li>
+            <li><a class="dropdown-item level-filter" data-level="3" href="#">3</a></li>
+            <li><a class="dropdown-item level-filter" data-level="4" href="#">4</a></li>
+            <li><a class="dropdown-item level-filter" data-level="5" href="#">5</a></li>
+            <li><a class="dropdown-item level-filter" data-level="6" href="#">6</a></li>
+            <li><a class="dropdown-item level-filter" data-level="7" href="#">7</a></li>
+            <li><a class="dropdown-item level-filter" data-level="8" href="#">8</a></li>
+            <li><a class="dropdown-item level-filter" data-level="9" href="#">9</a></li>
+            <li><a class="dropdown-item level-filter" data-level="10" href="#">10</a></li>
+            <li><a class="dropdown-item level-filter" data-level="11" href="#">11</a></li>
+            <li><a class="dropdown-item level-filter" data-level="12" href="#">12</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button id="raceDropdown" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Type
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item race-filter" data-race="Aqua" href="#">Aqua</a></li>
+            <li><a class="dropdown-item race-filter" data-race="Beast" href="#">Beast</a></li>
+            <li><a class="dropdown-item race-filter" data-race="Beast-Warrior" href="#">Beast-Warrior</a></li>
+            <li><a class="dropdown-item race-filter" data-race="Creator-God" href="#">Creator God</a></li>
+            <li><a class="dropdown-item race-filter" data-race="Cyberse" href="#">Cyberse</a></li>
+            <li><a class="dropdown-item race-filter" data-race="Dinosaur" href="#">Dinosaur</a></li>
+            <li><a class="dropdown-item race-filter" data-race="Divine-Beast" href="#">Divine-Beast</a></li>
+            <li><a class="dropdown-item race-filter" data-race="Dragon" href="#">Dragon</a></li>
+            <li><a class="dropdown-item race-filter" data-race="Fairy" href="#">Fairy</a></li>
+            <li><a class="dropdown-item race-filter" data-race="Fiend" href="#">Fiend</a></li>
+            <li><a class="dropdown-item race-filter" data-race="Fish" href="#">Fish</a></li>
+            <li><a class="dropdown-item race-filter" data-race="Insect" href="#">Insect</a></li>
+            <li><a class="dropdown-item race-filter" data-race="Machine" href="#">Machine</a></li>
+            <li><a class="dropdown-item race-filter" data-race="Plant" href="#">Plant</a></li>
+            <li><a class="dropdown-item race-filter" data-race="Psychic" href="#">Psychic</a></li>
+            <li><a class="dropdown-item race-filter" data-race="Pyro" href="#">Pyro</a></li>
+            <li><a class="dropdown-item race-filter" data-race="Reptile" href="#">Reptile</a></li>
+            <li><a class="dropdown-item race-filter" data-race="Rock" href="#">Rock</a></li>
+            <li><a class="dropdown-item race-filter" data-race="Sea Serpent" href="#">Sea Serpent</a></li>
+            <li><a class="dropdown-item race-filter" data-race="Spellcaster" href="#">Spellcaster</a></li>
+            <li><a class="dropdown-item race-filter" data-race="Thunder" href="#">Thunder</a></li>
+            <li><a class="dropdown-item race-filter" data-race="Warrior" href="#">Warrior</a></li>
+            <li><a class="dropdown-item race-filter" data-race="Winged Beast" href="#">Winged Beast</a></li>
+            <li><a class="dropdown-item race-filter" data-race="Wyrm" href="#">Wyrm</a></li>
+            <li><a class="dropdown-item race-filter" data-race="Zombie" href="#">	Zombie</a></li>
+          </ul>
+        <button type="button" class="btn btn-outline-success" id="resetButton">Reset</button>
+      </div>
+      
+    <div class="slider-container">
+  
+    </div>
+     
+      
+    </div>  
+   <div class="cartas">
+   
+    
+  </main>
+    
+    <footer>
+      <h4 class="TEXT"><a href=""><i class="fa-brands fa-facebook-f"></i></a>  <a href=""><i class="fa-brands fa-youtube"></i></a>   <a href=""><i class="fa-brands fa-twitter"></i></a></h4>
+      <h4 class="cor"><i class="fa-regular fa-copyright" ></i> 2023 Yugiteca</h4>
+      <div class="subf">
+      <a href=""><h5 class="text">Terms of service</h5></a>
+      <a href=""><h5 class="text">Contact</h5></a>
+    </div>
+    <h5 class="final">The product belongs to their respective owners</h5>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
